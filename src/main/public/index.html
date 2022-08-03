@@ -7,7 +7,7 @@
 <body>
 <h1 style="font-family:verdana; text-align:center;">FIFA World Cup 2022 Schedule</h1>
 <div style="text-align:center">
-    <img alt="500 Internal Server Error" height="200" src="images/mainlogo.jpg" width="550">
+    <img src="images/mainlogo.jpg" height="200" width="550" alt="500 Internal Server Error">
 </div>
 <p style="font-family:verdana;color:darkgreen"><i>The 2022 FIFA World Cup is scheduled to be the 22nd running of the
     FIFA World Cup competition, the quadrennial international men's football championship contested by the senior
@@ -37,7 +37,6 @@
     text-align:center;
     height:25px
     }
-
     </style>
     <table style="border:10px solid black;border-style:groove;border-color:red blue gold teal;width:100%">
         <tr>
@@ -104,5 +103,22 @@
             <td>Korea Republic</td>
         </tr>
     </table>
+</div>
+<br>
+<div style="font-family:verdana;">
+    <form action="redirect.html" method="post">
+        <fieldset>
+            <legend>Want to get more updates? Subscribe to this page below</legend>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="email">Email Id</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="radio" id="day" name="updates" value="day">
+            <label for="day">Updates every day</label>
+            <input type="radio" id="week" name="updates" value="week">
+            <label for="week">Updates every week</label><br><br>
+            <input type="submit" value="Subscribe" onclick="alert('Great! You are now subscribed to this page.')" style="height:30px;width:120px;">
+        </fieldset>
+    </form>
 </div>
 </html>
