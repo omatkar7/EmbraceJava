@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 
 public class MiscUtilitiesExceptionTest {
 
+    @DisplayName("Test Custom Exception Handling")
     @Test
-    @DisplayName("Verify Custom Exception Handling")
     void testLoginException() {
         System.out.println("Test Exception Handling");
         Exception exception = Assertions.assertThrows(LoginException.class, () -> MiscUtilities.doLogin(null,null));

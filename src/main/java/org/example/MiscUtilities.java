@@ -24,4 +24,18 @@ public class MiscUtilities {
             return "Login was successful!";
         }
     }
+
+    public static String doLogin(LoginDto loginDetails) throws LoginException {
+        if (loginDetails == null) {
+            throw new LoginException("Username & Password must not be null");
+        } else if (loginDetails.getUserName().equals(credInitializer.get("userName")) && !loginDetails.getPassword().equals(credInitializer.get("password"))) {
+            return "Invalid Password";
+        } else if (!loginDetails.getUserName().equals(credInitializer.get("userName")) && loginDetails.getPassword().equals(credInitializer.get("password"))) {
+            return "Invalid Username";
+        } else if (!loginDetails.getUserName().equals(credInitializer.get("userName")) && !loginDetails.getPassword().equals(credInitializer.get("password"))) {
+            return "Invalid Username & Password";
+        } else {
+            return "Login was successful!";
+        }
+    }
 }
