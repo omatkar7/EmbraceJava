@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon"> <! -- Path added to the root directory as main.html is inside nested folders -- >
+</head>
+<body>
+<h1 style="font-family:verdana; text-align:center;">Subscribe Now!</h1>
+<div style="text-align:center">
+    <img src="images/mainlogo.jpg" height="200" width="550" alt="500 Internal Server Error">
+</div>
+<div style="font-family:verdana;">
+    <form action="redirect.html" method="post">
+        <fieldset>
+            <legend>Want to get more updates? Subscribe to this page below</legend>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="email">Email Id</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="radio" id="day" name="updates" value="day">
+            <label for="day">Updates every day</label>
+            <input type="radio" id="week" name="updates" value="week">
+            <label for="week">Updates every week</label><br><br>
+            <input type="submit" value="Subscribe" onclick="alert('Great! You are now subscribed to this page.')" style="height:30px;width:120px;">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

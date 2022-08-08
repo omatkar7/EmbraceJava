@@ -6,22 +6,18 @@ text-align: center;
 
 p {
 font-family: verdana;
-color: black;
+color: AntiqueWhite;
 }
 
 body {
 background-color: lightgrey;
-background-image: url("../images/FWC2022-background-image-white.jpg");
+background-image: url("../images/index-bg.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 }
 
-#redirectLinks1, #redirectLinks2 {
-text-align: center;
-}
-
-#redirectLinks3, #redirectLinks4 {
+#redirectLinks1, #redirectLinks2, #redirectLinks3 {
 text-align: center;
 }
 
