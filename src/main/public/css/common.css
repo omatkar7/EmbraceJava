@@ -25,6 +25,11 @@ img.main {
 float: left;
 }
 
+img.subscribe {
+float: left;
+opacity: 0.9;
+}
+
 table {
 border:10px solid black;
 border-style:groove;
