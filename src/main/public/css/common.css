@@ -21,8 +21,8 @@ a:hover, a:active {
   background-color: DarkOrange;
 }
 
-img {
-float: left
+img.main {
+float: left;
 }
 
 table {
@@ -30,14 +30,18 @@ border:10px solid black;
 border-style:groove;
 border-color:red blue gold teal;
 width:100%;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
 th,td {
 border: 2px black;
 border-radius: 10px;
 border-style: groove;
-text-align:center;
-height:25px
+text-align: center;
+height: 25px
 }
 
 p::first-letter {
@@ -47,4 +51,21 @@ font-size : xx-large;
 
 p::first-line {
 color : black;
+}
+
+div.stadium {
+margin: 5px;
+padding: 5px;
+height: auto;
+width: auto;
+text-align: center;
+display: inline;
+}
+
+div.name {
+text-indent: 10px;
+text-align: center;
+font-weight: normal;
+width: 250px;
+margin: 5px;
 }
