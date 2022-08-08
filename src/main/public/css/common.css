@@ -1,6 +1,6 @@
 a:link, a:visited {
-  background-color: #f44336;
-  color: white;
+  background-color: OldLace;
+  color: SeaGreen;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
@@ -8,5 +8,20 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: red;
+  background-color: DarkOrange;
+}
+
+table {
+border:10px solid black;
+border-style:groove;
+border-color:red blue gold teal;
+width:100%;
+}
+
+th,td {
+border: 2px black;
+border-radius: 10px;
+border-style: groove;
+text-align:center;
+height:25px
 }
