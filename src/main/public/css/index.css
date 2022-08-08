@@ -1,7 +1,8 @@
 h1 {
-color: teal;
+color: DarkTurquoise ;
 font-family: verdana;
 text-align: center;
+text-shadow: 2px 2px 2px #FF00FF;
 }
 
 p {
