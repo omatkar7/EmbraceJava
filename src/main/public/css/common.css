@@ -1,3 +1,7 @@
+body {
+background-color: LightCyan;
+}
+
 h1 {
 font-family: verdana;
 text-align: center;
@@ -31,14 +35,40 @@ opacity: 0.9;
 }
 
 table {
-border:10px solid black;
+border:6px solid black;
 border-style:groove;
 border-color:red blue gold teal;
-width:100%;
+width:80%;
 padding-left: 20px;
 padding-right: 20px;
 padding-top: 10px;
 padding-bottom: 10px;
+border-collapse: collapse;
+margin: 25px 0;
+font-size: 1.1em;
+font-family: Trebuchet MS;
+min-width: 400px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+tr {
+background-color: PapayaWhip;
+color: black;
+text-align: left;
+border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-of-type(even) {
+background-color: #f3f3f3;
+}
+
+tr:last-of-type {
+border-bottom: 2px solid #009879;
+}
+
+tr.active-row {
+font-weight: bold;
+color: #009879;
 }
 
 th,td {
@@ -46,7 +76,8 @@ border: 2px black;
 border-radius: 10px;
 border-style: groove;
 text-align: center;
-height: 25px
+height: 25px;
+padding: 8px 10px;
 }
 
 p::first-letter {
