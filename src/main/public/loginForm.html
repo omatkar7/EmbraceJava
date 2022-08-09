@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+<h1 style="font-family:verdana; text-align:center;">Login Form</h1>
+<p id="timerDisplay" style="font-family: verdana;"></p> <br>
+<div style="font-family:verdana;" onsubmit="doLogin()">
+    <form name="loginForm" onsubmit="event.preventDefault();return doLogin()" method="post"> <! -- event.preventDefault() will prevent the page from loading -- >
+        <label for="userName">Username</label>
+        <input type="text" id="userName" name="userName"><br>
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password"><br><br>
+        <input type="submit" style="height:30px;width:120px;" value="Login">
+    </form>
+</div>
+<p id="loginDisplay"></p>
+</body>
+<script>
+    timer = setInterval(function() {displayTimer()}, 1000);
+
+    function displayTimer() {
+    let dateString = new Date();
+    document.getElementById("timerDisplay").innerHTML = "The Timer has started. You need to login FAST! --> " +dateString.toLocaleTimeString();
+  }
+
+    function doLogin() {
+    const userName = "omkar";
+    const password = "tgydehuw784393@";
+
+    let incomingUserName = document.forms["loginForm"]["userName"].value;
+    let incomingPassword = document.forms["loginForm"]["password"].value;
+
+    if (incomingUserName == null || incomingPassword == null || incomingUserName == "" || incomingPassword == "") {
+        alert("You must enter credentials to login!");
+        return false;
+    }
+    else if (userName != incomingUserName || password != incomingPassword) {
+        alert("You must enter a valid username & password!");
+        return false;
+    }
+    else {
+        clearInterval(timer);
+        document.getElementById("loginDisplay").innerHTML = "You were successfully logged in at " + new Date();
+        document.getElementById("timerDisplay").innerHTML = "The Timer is stopped now!"
+    }
+  }
+</script>
+</html>
