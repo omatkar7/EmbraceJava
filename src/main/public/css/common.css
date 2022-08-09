@@ -13,21 +13,34 @@ font-family: verdana;
 color: DarkOrchid;
 }
 
-a:link, a:visited {
-  background-color: OldLace;
-  color: DarkRed;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+a.wiki:link, a.wiki:visited {
+background-color: OldLace;
+color: DarkRed;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
 }
 
-a:hover, a:active {
-  background-color: DarkOrange;
+a.wiki:hover, a.wiki:active {
+background-color: DarkOrange;
+}
+
+a.imgLink:link, a.imgLink:visited {
+color: DarkBlue;
+padding: 5px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+a.imgLink:hover, a.imgLink:active {
+background-color: LightBlue;
 }
 
 img.main {
 float: left;
+border-radius: 25px;
 }
 
 img.subscribe {
@@ -97,6 +110,13 @@ height: auto;
 width: auto;
 text-align: center;
 display: inline-block;
+transition: transform .2s;
+border-radius: 25px;
+}
+
+div.stadium:hover {
+border: 1px solid #777;
+transform: scale(1.3);
 }
 
 div.name {
@@ -112,4 +132,11 @@ margin: 5px;
         font-size: 20px;
         color: blue;
     }
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
