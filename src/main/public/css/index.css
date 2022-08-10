@@ -24,15 +24,20 @@ text-align: center;
 
 button {
 display: inline-block;
-background-color: #7b38d8;
-border-radius: 10px;
+background-color: BlueViolet;
+border-radius: 12px;
 border: 4px double #cccccc;
 color: #eeeeee;
 text-align: center;
 font-size: 18px;
 padding: 20px;
-width: 200px;
+width: 220px;
 transition: all 0.5s;
 cursor: pointer;
 margin: 5px;
+}
+
+button:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+background-color: #3e8e41;
 }
