@@ -2,19 +2,20 @@ h1 {
 color: DarkTurquoise ;
 font-family: verdana;
 text-align: center;
-text-shadow: 2px 2px 2px #FF00FF;
+text-shadow: 2px 2px 2px #282828;
 }
 
 p {
-font-family: verdana;
-color: AntiqueWhite;
+font-family: Montserrat Alternates Regular;
+font-size : large;
+color: #202020;
 }
 
 body {
-background-color: lightgrey;
+background-color: #A9A9A9;
 background-image: url("../images/index-bg.jpg");
 background-repeat: no-repeat;
-background-size: cover;
+background-size: contain;
 background-attachment: fixed;
 }
 
