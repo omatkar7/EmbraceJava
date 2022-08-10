@@ -13,6 +13,15 @@ font-family: verdana;
 color: DarkOrchid;
 }
 
+p::first-letter {
+color: black;
+font-size: x-large;
+}
+
+p::first-line {
+color: black;
+}
+
 a.wiki:link, a.wiki:visited {
 background-color: OldLace;
 color: DarkRed;
@@ -88,15 +97,6 @@ border-style: groove;
 text-align: center;
 height: 25px;
 padding: 8px 10px;
-}
-
-p::first-letter {
-color : black;
-font-size : xx-large;
-}
-
-p::first-line {
-color : black;
 }
 
 div.stadium {
