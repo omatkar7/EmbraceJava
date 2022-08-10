@@ -1,8 +1,14 @@
 h1 {
-color: DarkTurquoise ;
-font-family: verdana;
+color: DarkTurquoise;
 text-align: center;
 text-shadow: 2px 2px 2px #282828;
+font-size: 30px;
+text-shadow: -1px -1px #eee, 1px 1px #888, -3px 0 4px #000;
+font-family:"Segoe print", Arial, Helvetica, sans-serif;
+padding:2px;
+font-weight:lighter;
+box-shadow:2px 2px 6px #888;
+line-height:70px;
 }
 
 p {
