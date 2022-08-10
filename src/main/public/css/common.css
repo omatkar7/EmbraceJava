@@ -23,11 +23,11 @@ color: black;
 }
 
 a.wiki:link, a.wiki:visited {
-background-color: OldLace;
 color: DarkRed;
-padding: 10px 20px;
+background-color: OldLace;
 text-align: center;
 text-decoration: none;
+padding: 10px 20px;
 display: inline-block;
 }
 
@@ -58,21 +58,21 @@ opacity: 0.9;
 }
 
 table {
+font-size: 1.1em;
+font-family: Trebuchet MS;
 border:6px solid black;
 border-style:groove;
 border-color:red blue gold teal;
-width:80%;
 border-collapse: collapse;
-margin: 25px 0;
-font-size: 1.1em;
-font-family: Trebuchet MS;
+width:80%;
 min-width: 400px;
+margin: 25px 0;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 tr {
-background-color: PapayaWhip;
 color: black;
+background-color: PapayaWhip;
 text-align: left;
 border-bottom: 1px solid #dddddd;
 }
