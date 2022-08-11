@@ -3,7 +3,7 @@ color: DarkTurquoise;
 text-align: center;
 text-shadow: 2px 2px 2px #282828;
 text-shadow: -1px -1px #eee, 1px 1px #888, -3px 0 4px #000;
-font-size: 30px;
+font-size: 32px;
 font-family:"Segoe print", Arial, Helvetica, sans-serif;
 font-weight:lighter;
 padding:2px;
@@ -32,7 +32,7 @@ text-align: center;
 button {
 display: inline-block;
 color: #eeeeee;
-background-color: BlueViolet;
+background-color: #003042;
 border-radius: 12px;
 border: 4px double #cccccc;
 text-align: center;
@@ -46,5 +46,5 @@ margin: 5px;
 
 button:hover {
 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-background-color: #3e8e41;
+background-color: #0079A8;
 }
